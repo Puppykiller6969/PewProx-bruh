@@ -1,0 +1,54 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Jost', sans-serif; /* Apply Jost font */
+}
+
+body {
+    background: linear-gradient(to bottom, #00ffff, #008080); /* gradient from bright cyan to cyan */
+}
+
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background-color: rgba(1, 1, 1, 0.1); /* Semi-transparent black background */
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    backdrop-filter: blur(4px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(4px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Slight border for contrast */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: space-between; /* Align items to top and bottom */
+}
+
+.tabs {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    align-items: flex-start; /* Align buttons to the top */
+}
+
+.tabs a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition for transform */
+    margin-left: 10px; /* Add margin between buttons */
+}
+
+.tabs a:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: translateY(-5px); /* Added bounce effect on hover */
+}
